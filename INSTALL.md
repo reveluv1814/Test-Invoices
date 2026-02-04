@@ -25,14 +25,8 @@ Si no tienes Node.js instalado, descárgalo desde [nodejs.org](https://nodejs.or
 
 **Opción A: Clonar repositorio**
 ```bash
-git clone <url-del-repositorio>
-cd prueba
-```
-
-**Opción B: Descomprimir archivo**
-```bash
-unzip prueba.zip
-cd prueba
+git clone https://github.com/reveluv1814/Test-Invoices.git
+cd Test-Invoices
 ```
 
 ### 2. Configuración de variables de entorno
