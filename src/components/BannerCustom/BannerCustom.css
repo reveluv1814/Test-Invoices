@@ -1,0 +1,73 @@
+.banner-custom {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin: var(--spacing-md) 0;
+}
+
+.banner-icon {
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+}
+
+.banner-message {
+  margin: 0;
+  flex: 1;
+  font-weight: var(--font-weight-medium);
+}
+
+.banner-info {
+  background-color: var(--color-info-bg);
+  border-color: var(--color-info);
+  color: var(--color-info-text);
+}
+
+.banner-info .banner-icon {
+  color: var(--color-info);
+}
+
+.banner-warning {
+  background-color: var(--color-warning-bg);
+  border-color: var(--color-warning);
+  color: var(--color-warning-text);
+}
+
+.banner-warning .banner-icon {
+  color: var(--color-warning);
+}
+
+.banner-success {
+  background-color: var(--color-success-bg);
+  border-color: var(--color-success);
+  color: var(--color-success-text);
+}
+
+.banner-success .banner-icon {
+  color: var(--color-success);
+}
+
+.banner-error {
+  background-color: var(--color-error-bg);
+  border-color: var(--color-error);
+  color: var(--color-error-text);
+}
+
+.banner-error .banner-icon {
+  color: var(--color-error);
+}
+
+@media (max-width: 640px) {
+  .banner-custom {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-xs);
+  }
+
+  .banner-icon {
+    font-size: var(--font-size-lg);
+  }
+}

@@ -1,0 +1,35 @@
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-error);
+  background-color: transparent;
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn-pdf:hover:not(:disabled) {
+  background-color: var(--color-error);
+  color: white;
+}
+
+.btn-pdf:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-pdf i {
+  font-size: var(--font-size-base);
+}
+
+@media (max-width: 480px) {
+  .btn-pdf {
+    width: 100%;
+    justify-content: center;
+  }
+}
