@@ -1,0 +1,52 @@
+{
+  "name": "prueba-tecnica-front-end",
+  "version": "0.0.1",
+  "description": "Aplicación Front-End para Prueba Técnica",
+  "author": "neilgraneros11@gmail.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,css,md}'",
+    "format-check": "prettier --check 'src/**/*.{ts,tsx,js,jsx,json,css,md}'",
+    "preview": "vite preview",
+    "start": "npm run build && vite preview",
+    "test:e2e": "playwright test",
+    "test:mobile": "playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "test:codegen": "npx playwright codegen -b chromium",
+    "test:codegen:mobile": "npx playwright codegen -b chromium --device='iPhone 13'"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.2.2",
+    "@react-pdf/renderer": "4.3.2",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-hook-form": "7.71.1",
+    "react-router-dom": "7.13.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@playwright/test": "1.58.1",
+    "@types/node": "24.10.10",
+    "@types/react": "19.2.5",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "eslint": "9.39.1",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "globals": "16.5.0",
+    "msw": "2.12.7",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.4",
+    "vite": "7.2.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
